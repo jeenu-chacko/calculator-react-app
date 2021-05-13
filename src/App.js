@@ -52,7 +52,7 @@ function App() {
     {
       try
       {
-       setResult(eval(result) );
+       setResult(eval(result).toString() );
       }
       catch(err)
       {
@@ -71,13 +71,11 @@ function App() {
       else
       {
         if(!flag){  
-          console.log("hai")       
           setResult(Number(result.concat(e.target.value)).toString())
         
         }
         else
         {  
-          console.log("haillo") 
           setResult(result.concat(e.target.value))  
         }
       
